@@ -120,3 +120,10 @@ namespace Microsoft.FSharp.Core
         [<CompiledName("Length")>]
         val length: str:string -> int
 
+        /// <summary>Returns a new string made by concatenating an array of characters with separator <c>sep</c>
+        /// <param name="sep">The separator to be inserted between the characters of the input array.</param>
+        /// <param name="arr">The character array that to be joined.</param>
+        /// <returns>A new string consisted of the concatenated characters of the array, separated by the separation string.</returns>
+        /// <exception cref="System.ArgumentNullException">Thrown when input character array is null.</exception>
+        [<CompiledName("Join")>]
+        val join: sep:string -> arr: array<char> -> string

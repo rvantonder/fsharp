@@ -96,4 +96,7 @@ namespace Microsoft.FSharp.Core
             let str = emptyIfNull str
             str.Length
 
+        [<CompiledName("Join")>]
+        let join sep (arr : array<char>) =
+          System.String.Join(sep, arr)
 
